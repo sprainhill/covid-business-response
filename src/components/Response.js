@@ -4,9 +4,8 @@ const Response = props => {
     console.log("Response props : ", props.response)
     const {id, business_name, response, announced_plan, partial_remote_policy, full_remote_policy, restrict_employee_travel_partial, restrict_employee_travel_full, website, priv} = props.response
     return (
-        <tbody>
-
-        <tr style={{border: '1px solid red'}}>
+        <tbody style={{fontSize:"0.6rem"}}>
+        <tr >
             <td>{id}</td>
             <td>{business_name}</td>
             <td>{response}</td>

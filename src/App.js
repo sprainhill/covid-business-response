@@ -9,10 +9,6 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       <ResponseList />
-      <div>
-        <button class="button">Bulma test</button>
-      </div>
-  
     </div>
   );
 }

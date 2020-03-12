@@ -23,25 +23,29 @@ const ResponseList = () => {
     }, [])
 
     return (
-        <table class="table">
-            <thead>
+        <>
+        <table className="table center is-bordered is-striped is-hoverable" style={{margin: "2px 5px"}} >
+            <thead style={{background: "yellow", fontSize:"0.6rem"}}>
             <tr>
             <th>id</th>
-            <th>business name</th>
+            <th>name</th>
             <th>response</th>
             <th>announced plan</th>
-            <th>partial remote policy</th>
-            <th>full remote policy</th>
-            <th>partial travel restr</th>
-            <th>full travel restr</th>
+            <th>part remote</th>
+            <th>full remote</th>
+            <th>part travel</th>
+            <th>full travel </th>
             <th>website</th>
-            <th>public/private</th>
+            <th>type</th>
             </tr>
             </thead>
         {responses.map(response => {
             return <Response response={response} key={response.id} />
         })}
         </table>
+        <button className="button" style={{fontSize:"0.6rem"}}>add response</button>
+        </>
+
     );
 };
 
